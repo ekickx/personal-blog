@@ -1,12 +1,12 @@
 {
   "name": "mf-blogstarter",
   "version": "1.0.0",
-  "description": "Eleventy + Tailwind CSS blog starter",
-  "author": "Marc FILLEUL",
+  "description": "Personal blog using MF's blogstarter template",
+  "author": "Ghani Rafif",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcfilleul/mf-blogstarter"
+    "url": "https://github.com/ekickx/personal-blog"
   },
   "browserslist": [
     "defaults"
@@ -30,7 +30,7 @@
     "html-minifier": "^4.0.0",
     "luxon": "^1.21.2",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.3",
+    "postcss-cli": "^8.1.0",
     "tailwindcss": "^1.2.0",
     "tailwindcss-dark-mode": "^1.1.3",
     "terser": "^4.6.3"

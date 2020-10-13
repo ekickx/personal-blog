@@ -7,9 +7,6 @@ description: "Awesome blog posts"
 <section class="my-auto">
   <div class="mx-auto flow">
     <h1>{{ title }}</h1>
-    <p class="font-semibold">
-      Here are your wonderful posts...
-    </p>
     <ul>
       {%- for item in collections.post | reverse -%}
       <li class="mt-6">
