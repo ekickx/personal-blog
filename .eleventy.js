@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 
 // Plugins
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const readingTime = require('eleventy-plugin-reading-time');
 
 module.exports = function (eleventyConfig) {
   // OPT-OUT OF USING .gitignore to prevent reload issue when css change
@@ -39,6 +40,7 @@ module.exports = function (eleventyConfig) {
 
   // Plugins
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(readingTime);
 
   // Static assets to pass through
   eleventyConfig.addPassthroughCopy("src/assets");
