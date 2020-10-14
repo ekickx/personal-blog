@@ -9,7 +9,7 @@ module.exports = {
   allowDarkMode: true,
   lang: "en", // for html tag
   title: "Ghani's blog",
-  description: "My personal blog using Marc Filleul's template",
+  description: "My personal blog about Linux, Gnome, Gtk, etc",
   url: "https://ekickx.codes", // don't end with a slash /
   brandName: "Ghani Rafif", // for copyright and legal page
 
