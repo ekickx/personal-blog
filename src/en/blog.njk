@@ -8,7 +8,7 @@ description: "Awesome blog posts"
   <div class="mx-auto flow">
     <h1>{{ title }}</h1>
     <ul>
-      {%- for item in collections.post | reverse -%}
+      {%- for item in collections.post_en | reverse -%}
       <li class="mt-6">
         <time value="{{ item.date }}" class="text-sm text-gray-500">
           {{ item.date | readableDate }} ⚫ {{ item | readingTime }} to read
