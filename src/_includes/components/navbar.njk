@@ -28,6 +28,27 @@
         <span class="sr-only">Button to switch between dark and light theme</span>
       </button>
       {% endif %}
+      <p class="px-3 leading-5">
+        {% for lng in site.language %}
+        {# Class for current language #}
+        {% set activeClass = "font-semibold" if lng.label == locale else "" %}
+        
+        {# Default link for translatedUrl is no-translation #}
+        {% set translatedUrl = "/" + lng.label + "/no-translation" %}
+        
+        {# Loop through all the collections #}
+        {% for item in collections.all %}
+          {# If same translationKey is found
+          and the the language matches what we want #}
+          {% if item.data.translationKey == translationKey and item.data.locale == lng.label %}
+            {# then get its url #}
+            {% set translatedUrl = item.url %} 
+          {% endif %}
+        {% endfor %}
+        
+        <a class="{{ activeClass }}" href="{{ translatedUrl }}">{{ lng.label | upper }}</a>
+        {% endfor %}
+      </p>
     </div>
   </nav>
 </div>

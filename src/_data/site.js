@@ -21,13 +21,16 @@ module.exports = {
   title: "Ghani's blog",
   url: "https://ekickx.codes", 
 
-  en: {
-    description: "My personal blog about Linux, Gnome, Gtk, etc",
-    locale: "en_US", 
-  },
-
-  id: {
-    description: "Blog pribadi tentang Linux, Gnome, Gtk, dll",
-    locale: "id_ID",
-  }
+  language: [
+    {
+      label: "en",
+      locale: "en_US", 
+      description: "My personal blog about Linux, Gnome, Gtk, etc",
+    },
+    {
+      label: "id",
+      locale: "id_ID",
+      description: "Blog pribadi tentang Linux, Gnome, Gtk, dll",
+    },
+  ]
 };
