@@ -6,7 +6,7 @@ layout: default
 
   <article class="mx-auto measure markdown">
     <time value="{{ date }}" class="text-sm text-gray-600">
-      {{ date | readableDate }} ⚫ {{ content | readingTime }} to read
+      {{ date | readableDate }} • {{ content | readingTime }} to read
     </time>
     <h1 class="mt-6">{{ title }}</h1>
     <div class="mt-6 text-2xl text-gray-500 flow">
@@ -23,7 +23,7 @@ layout: default
     <script src="https://utteranc.es/client.js"
             repo="ekickx/personal-blog"
             issue-term="pathname"
-            label="comment"
+            label="blog comment"
             theme="github-light"
             crossorigin="anonymous"
             async>

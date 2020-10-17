@@ -12,7 +12,7 @@ translationKey: blogPage
       {%- for item in collections["post_" + locale] | reverse -%}
       <li class="mt-6">
         <time value="{{ item.date }}" class="text-sm text-gray-500">
-          {{ item.date | readableDate }} ⚫ {{ item | readingTime }} to read
+          {{ item.date | readableDate }} • {{ item | readingTime }} to read
         </time>
         <h3 class="mt-1 font-semibold"><a class="text-primary" href="{{ item.url }}">{{ item.data.title }}</a>
         </h3>
