@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         // Use Tailwind default serif fonts with font-display
         display: [...defaultTheme.fontFamily.serif],
+        mono: ['"Victor Mono"'],
       },
       colors: {
         bodybg: "var(--color-bodybg)",
