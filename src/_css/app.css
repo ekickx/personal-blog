@@ -220,6 +220,22 @@ a[rel~="external"]::after {
 /* Syntax Highlighting */
 /* https://github.com/PrismJS/prism-themes/blob/master/themes/prism-material-dark.css */
 /* With some little modifications */
+pre {
+  counter-reset: lineNumber;
+}
+code .highlight-line:before {
+  -webkit-user-select: none;
+  border-right: 1px solid #404040;
+  color: #858585;
+  content: counter(lineNumber);
+  counter-increment: lineNumber;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  margin-right: 1.2em;
+  padding-right: 1em;
+  text-align: right;
+  width: 2.2em;
+}
 code[class*="language-"],
 pre[class*="language-"] {
   text-align: left;

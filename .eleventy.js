@@ -39,7 +39,9 @@ module.exports = function (eleventyConfig) {
   }
 
   // Plugins
-  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(syntaxHighlight, {
+    alwaysWrapLineHighlights: true,
+  });
   eleventyConfig.addPlugin(readingTime);
 
   // Static assets to pass through
