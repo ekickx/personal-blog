@@ -15,6 +15,11 @@ module.exports = function (eleventyConfig) {
   // Layout aliases for convenience
   eleventyConfig.addLayoutAlias("default", "layouts/base.njk");
 
+  // Shortcode
+  eleventyConfig.addShortcode("external", function(text, href) {
+    return `<a rel="external" target="_blank" href="${href}">${text}</a>`;
+  });
+
   // Date helpers
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, {

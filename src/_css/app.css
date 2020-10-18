@@ -71,29 +71,35 @@ h4 {
   @apply font-bold leading-tight font-display;
 }
 h1 {
-  @apply text-5xl;
-}
-h2 {
   @apply text-4xl;
 }
-h3 {
+h2 {
   @apply text-3xl;
 }
-h4 {
+h3 {
   @apply text-2xl;
+}
+h4 {
+  @apply text-xl;
+}
+p {
+  @apply text-base;
 }
 @screen md {
   h1 {
-    @apply text-6xl;
-  }
-  h2 {
     @apply text-5xl;
   }
-  h3 {
+  h2 {
     @apply text-4xl;
   }
-  h4 {
+  h3 {
     @apply text-3xl;
+  }
+  h4 {
+    @apply text-2xl;
+  }
+  p {
+    @apply text-lg;
   }
 }
 
@@ -191,6 +197,13 @@ a[rel~="external"]::after {
 /* Syntax Highlighting */
 /* https://github.com/PrismJS/prism-themes/blob/master/themes/prism-material-dark.css */
 /* With some little modifications */
+code {
+  background: rgba(26, 32, 46, 0.1);
+}
+.dark-mode code {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
   text-align: left;
