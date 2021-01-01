@@ -8,7 +8,7 @@ sections:
   path: src/en/blog
   label: EN
   create: all
-  match: "**/*"
+  match: "**/*.md"
 - type: directory
   path: src/id/blog
   label: ID
