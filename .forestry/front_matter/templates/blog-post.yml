@@ -2,16 +2,6 @@
 label: blog-post
 hide_body: true
 fields:
-- name: title
-  type: text
-  config:
-    required: false
-  label: Title
-- name: translationKey
-  type: text
-  config:
-    required: false
-  label: Translation Key
 - name: date
   type: datetime
   label: Date
@@ -22,6 +12,16 @@ fields:
     time_format: 
     display_utc: false
     export_format: YYYY-MM-DD
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: translationKey
+  type: text
+  config:
+    required: false
+  label: Translation Key
 - name: teaser
   type: text
   config:
