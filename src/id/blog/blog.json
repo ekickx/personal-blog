@@ -1,5 +1,5 @@
 {
   "layout": "layouts/post.njk",
-  "tags": "post_id"
+  "tags": "post_id",
   "permalink": id/blog/{{ translationKey }}.html
 }
