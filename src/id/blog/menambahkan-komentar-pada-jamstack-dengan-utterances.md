@@ -4,7 +4,6 @@ translationKey: create-comment-for-jamstack-with-utterances
 date: 2020-10-19
 teaser: Fitur komentar pada jamstack, seperti hugo, 11ty, gatsby, dan lain-lain
 description: Disqus adalah layanan populer digunakan sebagai penyedia fitur komentar. Tapi karena beberapa keterbatasannya, saya memilih alternatif yang lebih mudah dan murah, yaitu utterances.
-permalink: id/blog/{{ translationKey }}.html
 ---
 Akhir-akhir ini jamstack mulai populer digunakan untuk membuat website, terutama blog pribadi. Saya juga termasuk yang ikut memakai metode jamstack untuk membuat blog ini. Saat membuat blog ini, saya ingin ada fitur komentar agar bisa mendapatkan umpan balik dari pengunjung blog saya. Awalnya saya ingin menggunakan layanan disqus tapi karena beberapa alasan, seperti {% external "ini", "https://love2dev.com/blog/why-i-am-ditching-disqus-and-you-should-too/" %} dan juga {% external "ini", "https://chrislema.com/killed-disqus-commenting/" %}, akhirnya saya memutuskan mencari alternatifnya. Dan saya menemukan yang cocok dan mudah digunakan, yaitu {% external "utterances", "https://utteranc.es/" %}.
 

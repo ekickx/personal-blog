@@ -4,7 +4,6 @@ translationKey: zinit-is-my-new-friend
 date: 2020-12-28
 teaser: Selamat tinggal zplug 👋️, aku sekarang bahagia dengan zinit.
 description: Selamat tinggal zplug 👋️, aku sekarang bahagia dengan zinit.
-permalink: id/blog/{{ translationKey }}.html
 ---
 Setelah satu tahun memakai zplug, akhirnya saya berpindah ke zinit. Di desktop saya, zplug membutuhkan waktu 300-500 ms untuk memuat plugin, sedangkan zinit hanya membutuhkan waktu sekitar 120-220 ms saja. Alasan awal saya berpindah ke zinit karena kecepatannya tadi dalam memuat plugin. Tetapi kelebihan zinit bukan itu saja. Pada tulisan ini akan saya tunjukan fitur-fitur zinit dan cara memakainya.
 

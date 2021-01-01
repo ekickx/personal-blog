@@ -1,4 +1,5 @@
 {
   "layout": "layouts/post.njk",
   "tags": "post_en"
+  "permalink": en/blog/{{ translationKey }}.html
 }
