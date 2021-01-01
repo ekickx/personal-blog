@@ -13,7 +13,7 @@ sections:
   path: src/id/blog
   label: ID
   create: all
-  match: "**/*"
+  match: "**/*.md"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
