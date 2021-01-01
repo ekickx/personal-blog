@@ -1,4 +1,34 @@
 ---
 label: blog-post
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: translationKey
+  type: text
+  config:
+    required: false
+  label: Translation Key
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD
+- name: teaser
+  type: text
+  config:
+    required: false
+  label: Teaser
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
