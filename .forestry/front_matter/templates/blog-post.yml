@@ -32,5 +32,3 @@ fields:
   config:
     required: false
   label: Description
-pages:
-- src/id/blog/change-arrow-key-with-hjkl.md
