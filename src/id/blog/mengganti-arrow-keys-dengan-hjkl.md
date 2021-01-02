@@ -57,6 +57,7 @@ Untuk mengubah <kbd>RShift</kbd> + <kbd>LShift</kbd> menjadi <kbd>Caps Lock</kbd
 keysym Shift_R = Shift_R Caps_Lock Shift_R
 keysym Shift_L = Shift_L Caps_Lock Shift_L
 ```
+
 Setelah itu simpan dan jalankan perintah berikut untuk mengaktifkan perubahannya
 
 ``` bash
@@ -68,7 +69,6 @@ Jika kalian ingin mengembalikan pengaturan key kalian seperti semula, jalankan p
 ``` bash
 setxkbmap -layout us
 ```
-
 
 # Esc
 
@@ -99,8 +99,8 @@ Hidden=false
 
 Itulah tadi artikel singkat saya. Terimakasih telah membaca.
 
----
+***
 
 ## Referensi
 
-- [https://github.com/acestronautical/dotfiles/blob/master/xmodmap/.xmodmap](https://github.com/acestronautical/dotfiles/blob/master/xmodmap/.xmodmap)
+* [acestronautical's dotfiles](https://github.com/acestronautical/dotfiles/blob/master/xmodmap/.xmodmap "Acestrona's dotfile")
