@@ -32,5 +32,14 @@ fields:
   config:
     required: false
   label: Description
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Text
 pages:
 - src/id/blog/mengganti-arrow-key-dengan-hjkl.md
