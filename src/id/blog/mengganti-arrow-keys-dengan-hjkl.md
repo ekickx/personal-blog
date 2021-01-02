@@ -7,3 +7,6 @@ description: Navigasi lebih mudah dengan capslock+hjkl sebagai pengganti arrow k
   untuk pengguna vim.
 
 ---
+Jika kalian pengguna vim, pasti pernah refleks menggunakan h,j,k,l untuk navigasi. Saya terkadang juga ingin bisa menggunakan hjkl untuk navigasi di luar vim. Syukurlah saya menemukan solusinya di internet.
+
+Jadi yang akan kita lakukan adalah membuat <kbd>Caps Lock</kbd> + <kbd>h</kbd>/<kbd>j</kbd/<kbd>k</kbd>/<kbd>l</kbd> menggantikan arrow key. Kita juga akan membuat capslock sebagai <kbd>Esc</kbd>. Oh iya jika kalian masih membutuhkan capslock, kita juga akan membuat `Right Shift` dan `Left Shift` sebagai capslock jika ditekan bersamaan.
