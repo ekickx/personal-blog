@@ -33,4 +33,4 @@ fields:
     required: false
   label: Description
 pages:
-- src/id/blog/mengganti-arrow-key-dengan-hjkl.md
+- src/id/blog/change-arrow-key-with-hjkl.md
