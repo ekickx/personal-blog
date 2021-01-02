@@ -15,10 +15,16 @@ Jadi yang akan kita lakukan adalah membuat <kbd>Caps Lock</kbd> + <kbd>h</kbd>/<
 
 Pertama pasang dulu `xmodmap`dan `xcape`.
 
-Pada Debian, Ubuntu, dan turunannya
+Pada Debian, Ubuntu, dan turunannya:
 
-\`\`\`bash
-
+``` bash
 sudo apt install xmodmap xcape
+```
 
-\`\`\`
+# Arrow key
+
+
+# Capslock
+
+
+# Esc
