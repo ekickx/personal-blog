@@ -17,3 +17,5 @@ fields:
 - type: text
   name: description
   label: description
+pages:
+- src/id/blog/mengganti-arrow-keys-dengan-hjkl.md
