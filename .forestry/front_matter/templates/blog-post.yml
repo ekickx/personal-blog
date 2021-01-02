@@ -1,0 +1,19 @@
+---
+label: blog-post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: translationKey
+  label: translationKey
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: teaser
+  label: teaser
+- type: text
+  name: description
+  label: description
