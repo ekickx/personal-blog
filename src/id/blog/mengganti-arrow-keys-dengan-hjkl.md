@@ -23,8 +23,84 @@ sudo apt install xmodmap xcape
 
 # Arrow key
 
+Buat file `.xmodmap` pada `$HOME`.
+
+``` bash
+touch ~/.xmodmap
+```
+
+Lalu salin baris ini pada file tersebut
+
+``` bash
+! Set capslock as Mode_switch
+remove Lock = Caps_Lock
+keycode 66 = Mode_switch
+
+! Set Mode_switch + h/j/k/l 
+keysym h = h H Left
+keysym j = j J Down
+keysym k = k K Up
+keysym l = l L Right 
+```
+
+Jadi yang dilakukan baris tersebut adalah:
+
+1. Menghapus fungsi capslock
+2. Lalu menjadikan Capslock (Keycode 66) sebagai `Mode_switch`
+3. Lalu menjadikan Mode_switch + hjkl sebagai arrow key. Jadi `keysym h = h H Left` berarti <kbd>h</kbd> jika ditekan menjadi `h`, <kbd>Shift</kbd> + <kbd>h</kbd> menjadi `H`, dan </kbd>Mode_switch</kbd> + <kbd>h</kbd> menjadi <kbd>🡄</kbd>.
 
 # Capslock
 
+Untuk mengubah <kbd>RShift</kbd> + <kbd>LShift</kbd> menjadi <kbd>Caps Lock</kbd>, salin baris ini pada file `~/.xmodmap` juga:
+
+``` bash
+keysym Shift_R = Shift_R Caps_Lock Shift_R
+keysym Shift_L = Shift_L Caps_Lock Shift_L
+```
+Setelah itu simpan dan jalankan perintah berikut untuk mengaktifkan perubahannya
+
+``` bash
+xmodmap ~/.xmodmap
+```
+
+Jika kalian ingin mengembalikan pengaturan key kalian seperti semula, jalankan perintah ini:
+
+``` bash
+setxkbmap -layout us
+```
+
 
 # Esc
+
+Sekarang kita akan menggunakan `xcape` untuk membuat <kbd>Mode_switch</kbd> menjadi <kbd>Esc</kbd> jika ditekan sekali. Kita melakukannya dengan perintah ini:
+
+``` bash
+xcape -e 'Mode_switch=Escape'
+```
+
+# Membuat autostart
+
+Terakhir kita memmbutuhkan autostart agar setiap kali kita login, perubahannya bisa berefek. Kalian salin baris berikut ini dan simpan di `~/.config/autostart/keys.desktop`.
+
+``` bash
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Xmodmap
+Comment=Modify key
+Exec=bash -c "sleep 20; xmodmap ~/.xmodmap && xcape -e 'Mode_switch=Escape'"
+StartupNotify=false
+Terminal=false
+Hidden=false
+```
+
+# Penutup
+
+Itulah tadi artikel singkat saya. Terimakasih telah membaca.
+
+---
+
+## Referensi
+
+- [https://github.com/acestronautical/dotfiles/blob/master/xmodmap/.xmodmap](https://github.com/acestronautical/dotfiles/blob/master/xmodmap/.xmodmap)
