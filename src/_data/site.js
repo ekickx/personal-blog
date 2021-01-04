@@ -17,6 +17,11 @@ module.exports = {
   twitter: "https://twitter.com/ekickx", 
   twitter_username: "@ekickx", // for Twitter Open Graph meta
 
+  // for rss feed
+  feedTitle: "RSS feed for ekickx's blog post",
+  feedSubtitle: "Ekickx's personal pages",
+  feedUrl: "/feed.xml",
+
   // for Open Graph meta
   title: "Ghani's blog",
   url: "https://ekickx.codes", 
