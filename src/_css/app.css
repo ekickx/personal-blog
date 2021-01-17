@@ -139,11 +139,11 @@ a:not([class]):hover {
 /* Extra Markdown styles (bold and italic are already set up in @tailwind base) */
 .markdown ul {
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 .markdown ol {
   list-style-type: decimal;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 /* Tailwind components */
@@ -194,10 +194,34 @@ a[rel~="external"]::after {
   text-decoration-line: none;
 }
 
+blockquote {
+  @apply italic text-gray-500;
+  @apply pl-4 border-l-4 border-secondary;
+}
+kbd {
+  @apply rounded border border-b-2 border-solid border-secondary;
+  padding: 3px 3px 1px;
+}
+
+/* Table */
+table {
+  @apply mx-auto border-collapse border;
+}
+th {
+  @apply border;
+}
+td {
+  @apply border-r;
+}
+tr, th, td {
+  @apply px-4;
+}
+
 /* Syntax Highlighting */
 /* https://github.com/PrismJS/prism-themes/blob/master/themes/prism-material-dark.css */
 /* With some little modifications */
 code {
+  @apply p-1;
   background: rgba(26, 32, 46, 0.1);
 }
 .dark-mode code {

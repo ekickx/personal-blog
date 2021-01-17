@@ -13,7 +13,7 @@ Jadi yang akan kita lakukan adalah membuat <kbd>Caps Lock</kbd> + <kbd>h</kbd>/<
 
 # Memasang tools
 
-Pertama pasang dulu `xmodmap`dan `xcape`.
+Pertama pasang dulu `xmodmap` dan `xcape`.
 
 Pada Debian, Ubuntu, dan turunannya:
 
@@ -46,8 +46,8 @@ keysym l = l L Right
 Jadi yang dilakukan baris tersebut adalah:
 
 1. Menghapus fungsi capslock
-2. Lalu menjadikan Capslock (Keycode 66) sebagai `Mode_switch`
-3. Lalu menjadikan Mode_switch + hjkl sebagai arrow key. Jadi `keysym h = h H Left` berarti <kbd>h</kbd> jika ditekan menjadi `h`, <kbd>Shift</kbd> + <kbd>h</kbd> menjadi `H`, dan </kbd>Mode_switch</kbd> + <kbd>h</kbd> menjadi <kbd>🡄</kbd>.
+2. Lalu menjadikan Capslock (Keycode 66) sebagai <kbd>Mode_switch</kbd>
+3. Lalu menjadikan <kbd>Mode_switch</kbd> + <kbd>hjkl</kbd> sebagai arrow key. Jadi `keysym h = h H Left` berarti, jika <kbd>h</kbd> ditekan menjadi `h`, <kbd>Shift</kbd> + <kbd>h</kbd> menjadi `H`, dan <kbd>Mode_switch</kbd> + <kbd>h</kbd> menjadi <kbd>Left arrow</kbd>.
 
 # Capslock
 
