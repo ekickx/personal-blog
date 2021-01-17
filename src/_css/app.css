@@ -139,11 +139,11 @@ a:not([class]):hover {
 /* Extra Markdown styles (bold and italic are already set up in @tailwind base) */
 .markdown ul {
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 .markdown ol {
   list-style-type: decimal;
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 /* Tailwind components */
@@ -198,6 +198,7 @@ a[rel~="external"]::after {
 /* https://github.com/PrismJS/prism-themes/blob/master/themes/prism-material-dark.css */
 /* With some little modifications */
 code {
+  @apply p-1;
   background: rgba(26, 32, 46, 0.1);
 }
 .dark-mode code {
@@ -244,6 +245,14 @@ pre[class*="language-"] {
   overflow: auto;
   position: relative;
   padding: 2rem;
+}
+blockquote {
+  @apply italic text-gray-500;
+  @apply pl-4 border-l-4 border-secondary;
+}
+kbd {
+  @apply rounded border border-b-2 border-solid border-secondary;
+  padding: 3px 3px 1px;
 }
 .language-css > code,
 .language-sass > code,
