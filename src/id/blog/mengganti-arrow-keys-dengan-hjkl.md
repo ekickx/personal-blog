@@ -47,7 +47,7 @@ Jadi yang dilakukan baris tersebut adalah:
 
 1. Menghapus fungsi capslock
 2. Lalu menjadikan Capslock (Keycode 66) sebagai <kbd>Mode_switch</kbd>
-3. Lalu menjadikan <kbd>Mode_switch</kbd> + <kbd>hjkl</kbd> sebagai arrow key. Jadi `keysym h = h H Left` berarti, jika <kbd>h</kbd> ditekan menjadi `h`, <kbd>Shift</kbd> + <kbd>h</kbd> menjadi `H`, dan <kbd>Mode_switch</kbd> + <kbd>h</kbd> menjadi <kbd>Left arrow</kbd>.
+3. Lalu menjadikan <kbd>Mode_switch</kbd> + <kbd>hjkl</kbd> sebagai arrow key. Jadi `keysym h = h H Left` berarti, jika <kbd>h</kbd> ditekan menjadi `h`, <kbd>Shift</kbd> + <kbd>h</kbd> menjadi `H`, dan <kbd>Mode_switch</kbd> + <kbd>h</kbd> menjadi <kbd>←</kbd>.
 
 # Capslock
 
