@@ -231,10 +231,6 @@ code {
 code[class*="language-"],
 pre[class*="language-"] {
   text-align: left;
-  white-space: pre-wrap;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
   color: #eee;
   background: #2f2f2f;
 
