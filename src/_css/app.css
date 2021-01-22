@@ -138,10 +138,12 @@ a:not([class]):hover {
 
 /* Extra Markdown styles (bold and italic are already set up in @tailwind base) */
 .markdown ul {
+  @apply ml-4;
   list-style-type: disc;
   list-style-position: outside;
 }
 .markdown ol {
+  @apply ml-4;
   list-style-type: decimal;
   list-style-position: outside;
 }
@@ -226,6 +228,13 @@ code {
 }
 .dark-mode code {
   background: rgba(255, 255, 255, 0.1);
+}
+.dark-mode code[class*="language-"],
+.dark-mode pre[class*="language-"] {
+  background: #11151f;
+}
+.dark-mode pre[class*="language-"] {
+  @apply border-2;
 }
 
 code[class*="language-"],
