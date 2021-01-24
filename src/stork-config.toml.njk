@@ -1,0 +1,18 @@
+---
+permalink: /stork-config.toml
+eleventyExcludeFromCollections: true
+---
+[input]
+url_prefix = "{{ site.url }}"
+
+{%- for post in collections.posts %}
+{% set absolutePostUrl %}{{ post.url | url }}{% endset %}
+[[input.files]]
+path = "{{ post.inputPath }}"
+url = "{{ absolutePostUrl }}"
+title = "{{ post.data.title }}"
+
+{%- endfor %}
+
+[output]
+filename = "dist/stork-index.st"
