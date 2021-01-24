@@ -219,6 +219,63 @@ tr, th, td {
   @apply px-4;
 }
 
+/* Stork search bar */
+.stork-wrapper {
+  @apply py-6;
+}
+.stork-input {
+  @apply relative py-1 px-2 rounded;
+  background: rgba(26, 32, 46, 0.1);
+}
+.stork-output {
+  @apply flex flex-col absolute p-2 mt-2;
+}
+.stork-output-visible {
+  @apply rounded shadow-2xl;
+  border: 1px solid hsla(0, 10%, 50%, 0.2);
+  background-color: var(--color-bodybg);
+}
+.stork-results {
+  @apply max-h-96 overflow-y-scroll;
+}
+.stork-result.selected {
+  background: hsl(192, 82%, 78%);
+}
+.stork-result a:link,
+.stork-result a:visited {
+  @apply block no-underline text-sm leading-relaxed p-1 my-1;
+}
+.stork-result .stork-title {
+  @apply text-base font-bold;
+}
+.stork-result .stork-excerpt {
+  @apply mb-1;
+}
+.stork-highlight {
+  background-color: hsl(59, 98%, 58%);
+}
+.stork-error {
+  outline: 2px solid hsl(0, 89%, 46%);
+}
+.stork-close-button {
+  @apply absolute mx-1 my-auto rounded-md px-2.5 py-1;
+  background: rgba(26, 32, 46, 0.1);
+}
+
+.dark-mode .stork-input {
+  background: rgba(255, 255, 255, 0.1);
+}
+.dark-mode .stork-result.selected {
+  background: hsl(192, 62%, 21%);
+}
+.dark-mode .stork-highlight {
+  background: #F8E45C;
+  @apply text-gray-700;
+}
+.dark-mode .stork-close-button {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* Syntax Highlighting */
 /* https://github.com/PrismJS/prism-themes/blob/master/themes/prism-material-dark.css */
 /* With some little modifications */
