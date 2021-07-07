@@ -1,9 +1,18 @@
 <div class="{{ classes.navbar }}">
-  <nav class="flex items-center mx-auto measure">
+  <nav class="flex items-center relative mx-auto measure">
+    <div class="stork-wrapper">
+      <input data-stork="posts" placeholder="Search…" class="stork-input" />
+      <div data-stork="posts-output" class="stork-output"></div>
+    </div>
+    <script src="https://files.stork-search.net/stork.js"></script>
+    <script>
+      stork.register('posts', '/stork-index.st');
+    </script>
+
     <div class="flex items-center ml-auto -mb-px">
       {% for item in navigation[locale] %}
       <a {% if item.external %}rel="external" {% endif %} href="{{ item.url | safe }}"
-        class="px-1 py-6 leading-5 whitespace-no-wrap border-b-2 border-transparent focus:outline-none hover:border-cool-gray-700 focus:border-cool-gray-700 ml-6 md:ml-12 {% if page.url == item.url %}border-primary{% endif %}"
+        class="hidden md:inline-flex px-1 py-6 leading-5 whitespace-no-wrap border-b-2 border-transparent focus:outline-none hover:border-cool-gray-700 focus:border-cool-gray-700 md:ml-12 {% if page.url == item.url %}border-primary{% endif %}"
         {% if page.url == item.url %} aria-current="page" {% endif %}>{{ item.label }}</a>
       {% endfor %}
       {% if site.allowDarkMode %}
