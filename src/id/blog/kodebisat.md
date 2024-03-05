@@ -1,6 +1,6 @@
 ---
 title: Cara Menjadi Developers Handal bersama Codepolitan dan Alibaba Cloud
-date: 2024/3/5
+date: 2024-3-5
 teaser: Pengalaman mengikuti KodeBisat
 description: KodeBisat adalah program beasiswa belajar fullstack selama 1 tahun untuk mahasiswa dan umum
 ---
